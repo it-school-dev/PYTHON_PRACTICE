@@ -1,2 +1,4 @@
 def hiFunction(name):
-    print()
+    print(f'Hi, {name}')
+
+hiFunction('Nikita')
