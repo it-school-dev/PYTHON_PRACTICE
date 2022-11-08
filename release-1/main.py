@@ -1,2 +1,2 @@
 def hiFunction(name):
-    print()
+    return 'Hi, ' + name
