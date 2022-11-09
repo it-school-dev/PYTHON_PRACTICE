@@ -7,6 +7,10 @@ def deepSorting(mas, atr):
 def getNumbers(mas):
     return [x for x in mas if (type(x) == int or type(x) == float)]
 
+def _min(mas):
+    return sorted(mas)[0]
+
 print(*sorting([1, 5, 26, 39, 2], -1))
 print(deepSorting([{'age': 15, 'height': 140}, {'age': 14, 'height': 150}], 'age'))
 print(getNumbers(['d', 1, ['b', 'glfdk'], 3, 0.8]))
+print(_min([1, 5, -222, 34, -100]))
