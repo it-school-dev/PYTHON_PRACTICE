@@ -20,9 +20,12 @@ def apples(num):
             print(f"i have {kol} apples")
     except ValueError:
         print("It's wrong type of number")
-    
+
+def getPower(num):
+    print(num**2)
 
 hiFunction('Verona')
 _sum(32, 16)
 isEven(19)
 apples(input("Enter the num of apples: "))
+getPower(7)
