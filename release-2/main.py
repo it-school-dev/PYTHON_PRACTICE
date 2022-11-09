@@ -38,7 +38,17 @@ def findTheMostRepeatedEls(arr):
         # print(elem[0])
     return freq_els
 
-# def stack(arr):
+def stack(arr):
+    cntr = 0
+    for elem in arr:
+        if elem == '[':
+            cntr += 1
+        else:
+            cntr -= 1
+    if cntr == 0:
+        return True
+    else:
+        return False
 
 def checkForBadWord(str, word):
     if word in str:
@@ -52,5 +62,5 @@ def checkForBadWord(str, word):
 # print(min([1, 5, 34, -100]))
 # print(getSet([1, 1, 1, 3, 4, 2, 2]))
 # print(findTheMostRepeatedEls([1, 1, 1, 3, 4, 2, 2, 2]))
-
+# print(stack([']', '[', ']']))
 # print(checkForBadWord('Hi, Nikita', 'Hi'))
