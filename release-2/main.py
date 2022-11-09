@@ -30,13 +30,13 @@ deepsorting(p_1,p_2,s_1)
 
 #3
 
-
-
-
-
-
-
-
+def getNumbers(arr):
+    list = []
+    for elem in arr:
+        if type(elem) == int or type(elem) == float:
+            list.append(elem)
+    return list
+print(getNumbers( ['d', 6, 'null', 5] ))
 
 #4
 
@@ -50,8 +50,9 @@ print(low_num)
 
 #5
 
-list = input()   
+list = [1,2,21,21,1,4,6,6,6,7]   
 mySet = set(list)
 print(mySet)
+
 
 
