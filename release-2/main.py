@@ -10,7 +10,7 @@ elif usl == -1:
 
 
 
-                                      #функция deepSorting
+                                    #функция deepSorting
 class Employee:
   def __init__(self, age, height):
       self.age = age

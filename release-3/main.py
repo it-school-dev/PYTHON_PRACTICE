@@ -6,7 +6,7 @@ dict = {
 }
 print(dict['name'], dict['surname'])
 
-                                            #функция checkForPropertyAndValue
+                                        #функция checkForPropertyAndValue
 
 
 

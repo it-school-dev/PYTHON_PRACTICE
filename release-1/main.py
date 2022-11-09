@@ -3,7 +3,7 @@ name = input()
 print('Hi, ', name)
 
 
-                            #функция sum
+                        #функция sum
 5a = int(input())
 b = int(input())
 print(a+b)
