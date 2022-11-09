@@ -19,7 +19,8 @@ sum(a,b)
 
 def isEven(n):
     if x == 5:
-        print(n, '->', 'False')
+        print(n, '->', 'False') # тупанул конкретно ахахах
+                                # потом испралю
     if x == 0:
         print(n, '->', 'True')   
     if x == 4:
