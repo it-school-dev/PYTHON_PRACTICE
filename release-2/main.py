@@ -10,7 +10,11 @@ def getNumbers(mas):
 def _min(mas):
     return sorted(mas)[0]
 
+def getSet(mas):
+    return list(set(mas))
+
 print(*sorting([1, 5, 26, 39, 2], -1))
 print(deepSorting([{'age': 15, 'height': 140}, {'age': 14, 'height': 150}], 'age'))
 print(getNumbers(['d', 1, ['b', 'glfdk'], 3, 0.8]))
 print(_min([1, 5, -222, 34, -100]))
+print(getSet([1, 1, 'h', 1, 3, 4, 'h', 2, 2]))
