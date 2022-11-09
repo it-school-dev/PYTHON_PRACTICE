@@ -10,4 +10,12 @@ def checkForPropertyAndValue(obj, key):
 # def parser(arr)
 
 # print(fullName({'name': 'Den', 'surname': 'Zai', 'age': 12}))
-# print(checkForPropertyAndValue({'key': 5}, 'key'))
+# print(checkForPropertyAndValue({'key': 5, 'ky': 2}, 'ky'))
+
+# dictionary = {
+#     'name': 'Den',
+#     'surname': 'Zai',
+#     'age': 12
+# }
+
+# print(list(dictionary.keys())[0])

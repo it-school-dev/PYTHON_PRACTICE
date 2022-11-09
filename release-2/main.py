@@ -2,9 +2,9 @@ from collections import Counter
 
 def sorting(arr, direction):
     if direction == 1:
-        return sorted(arr)
+        return sorted(arr) # sorted(arg) = arg.sort()
     else:
-        return sorted(arr, reverse=True) 
+        return sorted(arr, reverse=True)
 
 def deepSorting(arr, key):
     new_list = sorted(arr, key=lambda d: d[key])
@@ -32,6 +32,9 @@ def findTheMostRepeatedEls(arr):
     # print(counts)
     max_count = max(counts.values())
     freq_els = []
+    # print(counts.items())
+    # test = counts.items()[0]
+    # print(test)
     for elem in counts.items():
         if elem[1] == max_count:
             freq_els.append(elem[0])
@@ -51,16 +54,20 @@ def stack(arr):
         return False
 
 def checkForBadWord(str, word):
-    if word in str:
-        return True
-    else:
-        return False
+    # if word in str:
+    #     return True
+    # else:
+    #     return False
+    
+    return word in str
+    
+    
  
 # print(sorting([1, 5, 2], 1))
 # print(deepSorting([{'age': 15, 'height': 140}, {'age': 14, 'height': 150}], 'age'))
-# print(getNumbers(['d', 1, 3, 2.3, 'null']))
+# print(getNumbers(['d', 1, 3, 2.3, 'null', 4, 5, True, False, 'dict']))
 # print(min([1, 5, 34, -100]))
 # print(getSet([1, 1, 1, 3, 4, 2, 2]))
 # print(findTheMostRepeatedEls([1, 1, 1, 3, 4, 2, 2, 2]))
-# print(stack([']', '[', ']']))
+# print(stack(['[', ']', '[', ']']))
 # print(checkForBadWord('Hi, Nikita', 'Hi'))
