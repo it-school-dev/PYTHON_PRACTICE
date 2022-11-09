@@ -1,4 +1,4 @@
-                                           #функция fullName
+                                        #функция fullName
 dict = {
     'name': 'Lim', 
     'surname': 'Bok', 

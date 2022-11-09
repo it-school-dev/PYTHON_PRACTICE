@@ -1,4 +1,4 @@
-                             #функция hiFunction
+                            #функция hiFunction
 name = input()
 print('Hi, ', name)
 

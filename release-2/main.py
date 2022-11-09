@@ -1,4 +1,4 @@
-                                   #функция sorting
+                                #функция sorting
 a = [1,5, 2]
 usl = int(input())
 if usl == 1:
