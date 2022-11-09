@@ -1,193 +1,140 @@
-## RELEASE 1
+                            #функция hiFunction
+name = input()
+print('Hi, ', name)
 
-# функция hiFunction
-написать функцию которая аргументом получает имя и возвращает приветствие
-```
-'Nikita' -> 'Hi, Nikita'
 
-```
+                        #функция sum
+5a = int(input())
+b = int(input())
+print(a+b)
 
-# функция sum
-написать функцию которая аргументами получает 2 числа и выдает их сумму 
-```
-5, 6 -> 11
 
-```
+                             #функция isEven
+a = int(input())
+if a % 2 == 0:
+    print('true')
+else:
+    print('false')
 
-# функция isEven
-написать функцию которая аргументом получает числа и возвращает true если четное, false если нет
-```
-5 -> false
-0 -> true
-4 -> true
 
-```
+                                   #функция apples
+a = int(input())
+if a == 0:
+    print('I have not apples')
+elif a == 1:
+    print('I have apple')
+elif a < 0:
+    print('...')
+else:
+    print('I have ', a, ' apples')
 
-# функция apples
-написать функцию которая аргументом получает число а возвращает фразу
-```
-2 -> i have 2 apples
 
-```
+                                     #функция getPower
+a = int(input())
+print(a*a)
 
-# функция getPower
-написать функцию которая аргументом получает число а возвращает его квадрат
-```
-4 -> 16
 
-```
+                                #функция sorting
+a = [1,5, 2]
+usl = int(input())
+if usl == 1:
+    a.sort()
+    print(a)
+elif usl == -1:
+    a2 = sorted(a, reverse=True)
+    print (a2)
 
-## RELEASE 2
 
-# функция sorting
-написать функцию которая аргументами получает массив чисел и числа 1 или -1, в зависимости от числа вы должны отсортировать массив поубыванию (-1) или по вовзрастанию (1)
-```
-[1,5, 2], -1 -> [5, 2, 1]
-[1, 5, 2], 1 -> [1, 2, 5]
 
-```
+                                    #функция deepSorting
+class Employee:
+  def __init__(self, age, height):
+      self.age = age
+      self.height = height
+Alex = Employee('15', 140)
+Amanda = Employee('14', 150)
+L = [Alex, Amanda]
+L.sort(key=lambda x: x.height)
+print([item.age for item in L])
 
-# функция deepSorting
-написать функцию которая аргументами получает массив объектов и строку а возвращает отсортированный массив по полю, которое было переданно вторым аргументом.
-```
-[{age: 15, height: 140}, {age: 14, height: 150}], age -> [{age: 14, height: 150}, {age: 15, height: 150}]
-```
 
-# функция getNumbers
-написать функцию которая аргументом получает массив элементов, возвращает массив, где только числа из исходного массива
-```
-['d', 1, 3, null] -> [1, 3]
-```
 
-# функция min
-написать функцию которая аргументом получает массив элементов, возвращает массив наименьшее число в массиве
-```
-[1, 5, 34, -100] -> -100
-```
-# функция getSet
-написать функцию которая аргументом получает массив элементов, а возвращает массив с уникальными элементами
-```
-[1, 1, 1, 3, 4, 2, 2] -> [1, 3, 4, 2]
-```
-# функция findTheMostReapetedEls
-написать функцию которая аргументом получает массив элементов, а возвращает массив елементов, которые повторяются больше всего
-```
-[1, 1, 1, 3, 4, 2, 2, 2] -> [1, 2]
-```
 
-# функция stack
-написать функцию которая аргументом получает массив элементов ('[', ']'), а возвращает true если для каждой открывающей находиться своя закрывающая на нужном этапе и закрывает свой скоуп, в обратном случае false 
-```
- ['[','[', ']', ']' ] -> true
- [']', '[', ']'] -> false
-```
+                                    #функция getNumbers
+a = ['d', 1, 3, 'null']
+b = []
+for i in range(len(a)):
+    if type (a[i]) is int:
+        b.append(a[i])
+        print(b)
 
-# функция checkForBadWord
-написать функцию которая аргументами получает строку и слово, а возарщает true, если это слово находиться в строке, если нет - false
-```
- 'Hi, Nikita', 'Hi' -> true
-```
 
-# функция customs
-написать сustom функции(customSome, customFind, customMap, customReducer, custonFilter), которые будут повторяют логику методов массива (.some(), .find(), .map(), .reducer(), .filter())
-```
-```
+                                        #функция min
+a = [1, 5, 34, -100]
+print(min(a))
 
-## RELEASE 3
 
-# функция fullName
-Написать функцию, которая получает аргументом объект в ключами name и surname, а возвращает полное имя
-```
-{name: 'Lim', surname: 'Bok', age: 12} -> 'Bok Lim'
+                                       #функция getSet
+a = [1, 1, 1, 3, 4, 2, 2]
+unique_numbers = list(set(a))
+print(unique_numbers)
 
-```
 
-# функция checkForPropertyAndValue
-Написать функцию, которая получает аргументами объект и имя ключа, которая возвращает true, если имеется такой ключ и под ним лежит лежит положительное значение, если нет - false
-```
-{key: 5}, 'key2' -> false
-{key: 5}, 'key' -> true
-{key: null}, 'key' -> false
+                                       #функция findTheMostReapetedEls
+a = [1, 1, 1, 3, 4, 2, 2, 2]
+most = None
+q_most = 0
+for qount in a:
+    q = a.count(qount)
+    if q > q_most:
+        q_most = q
+        most = qount
+print(most)
 
-```
 
-# функция parser
-Написать функцию, которая принимает массив объектов, объекты могут быть след типа:
-```
-{
-    type: 'owner',
-    name: 'Some Name',
-    age: 0
+                                         #функция stack
+def check(string):
+    brackets_open = ('(', '[', '{', '<')
+    brackets_closed = (')', ']', '}', '>')
+    stack = []
+    for i in string:
+        if i in brackets_open:
+            stack.append(i)
+        if i in brackets_closed:    
+            if len(stack) == 0:
+                return False
+            index = brackets_closed.index(i)
+            open_bracket = brackets_open[index]
+            if stack[-1] == open_bracket:
+                stack = stack[:-1]  
+            else: return False  
+    return (not stack)
+
+
+                                          #функция checkForBadWord
+a = str(input())
+word = input()
+a.find(word)
+if word in a:
+    print('True')
+else:
+    print('False')
+    
+    
+                                         #функция fullName
+dict = {
+    'name': 'Lim', 
+    'surname': 'Bok', 
+    'age': 12
 }
+print(dict['name'], dict['surname'])
 
-```
-```
-{
-    type: 'some type',
-    owner: 'Some Name',
-    oc: 'some oc'
-    name: 'Some Name'
-}
-```
-type может быть либо owner, либо любой другой к примеру phone
-name должно носить уникальное значение
-
-Функция должны возвращать массив объектов, где объект это "человек" у него есть ключи, имена которых это тип вещей, которыми он владеет, под этими ключами лежат массивы вещей
-
-входные данные:
-
-```
-[
-    {
-        type: 'owner',
-        name: 'Vova',
-        age: 12
-    },
-    {
-        type: 'computer',
-        name: 'someComputer',
-        oc: 'Mac',
-        owner: 'Vova'
-    },
-    {
-        type: 'phone',
-        name: 'somePhone',
-        oc: 'ios',
-        owner: 'Vova'
-    }
-]
-
-```
-Выходные данные:
-```
-
-[
-    {
-        name: 'Vova',
-        age: 12,
-        computers: [
-            {
-                name: 'someComputer',
-                oc: 'Mac',
-            }
-        ],
-        phones: [
-            {
-                name: 'somePhone',
-                oc: 'ios',
-
-            }
-        ]
-
-    },
-]
-
-```
+                                        #функция checkForPropertyAndValue
 
 
-# функция createObjFromStr
-Написать функцию, которая получает аргументом получает строку, а возвращает объект, если объект составить невозможно, то возвращать 'ERROR'
-```
-'{name: 'Vova', age: 12, type: 'owner'}' -> {name: 'Vova', age: 12, type: 'owner'}
-```
 
+                                             #функция parser
+                                             
+                                             
+                                             
+                                             #функция createObjFromStr
