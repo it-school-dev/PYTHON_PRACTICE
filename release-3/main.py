@@ -16,6 +16,12 @@ def parser(mas):
         }]] for el in mas if (el['type'] != 'owner' and a['name'] == el['owner'])])
     return res
 
+def createObjFromStr(obj):
+    try:
+        return obj
+    except:
+        return "ERROR"
+
 print(fullName({'name': 'Harry', 'surname': 'Potter', 'age': 12}))
 print(checkForPropertyAndValue({'key': None}, 'key'))
 print(parser([
@@ -54,3 +60,4 @@ print(parser([
         'owner': 'Verona'
     }
 ]))
+print(createObjFromStr("{name: 'Vova', age: 12, type: 'owner'}"))
