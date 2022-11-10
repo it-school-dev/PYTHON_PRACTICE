@@ -34,11 +34,7 @@ print(apples(7))
 def getPowerRoot(number):
   return number ** 2
 
-<<<<<<< HEAD
-print(getPowerRoot(25))
-=======
 print(getPowerRoot(25))
 
 
 
->>>>>>> 7468ac432ebaabde30d7e5b980a4b6cfc41d31c5

@@ -1,0 +1,2 @@
+def hiFunction(name):
+    print()

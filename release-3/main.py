@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7468ac432ebaabde30d7e5b980a4b6cfc41d31c5
 #1
 def fullName(obj):
     return obj["surname"] + " " + obj["name"]
@@ -16,6 +20,10 @@ def checkForPropertyAndValue(obj, key):
     else:
         return False
 
+<<<<<<< HEAD
 # print(checkForPropertyAndValue({"key: 5"}, "key")) #True
 print(checkForPropertyAndValue({"key": 5, "ke": 18}, "ke")) #True
 # print(checkForPropertyAndValue({"key: -2"}, "key")) #False
+=======
+print(checkForPropertyAndValue({"key: 5"}, "key"))
+>>>>>>> 7468ac432ebaabde30d7e5b980a4b6cfc41d31c5
