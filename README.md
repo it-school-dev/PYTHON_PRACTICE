@@ -1,140 +1,129 @@
-                            #функция hiFunction
-name = input()
-print('Hi, ', name)
+                                                                   #RELEASE 1
+
+def hiFunction(name):
+  return 'Hi, '+ name
 
 
-                        #функция sum
-5a = int(input())
-b = int(input())
-print(a+b)
+def sum(a,b):
+  return a + b
 
 
-                             #функция isEven
-a = int(input())
-if a % 2 == 0:
-    print('true')
-else:
-    print('false')
+
+def isEven(a):
+  if a % 2 == 0:
+    return('true')
+  else:
+    return('false')
 
 
-                                   #функция apples
-a = int(input())
-if a == 0:
-    print('I have not apples')
-elif a == 1:
-    print('I have apple')
-elif a < 0:
-    print('...')
-else:
-    print('I have ', a, ' apples')
+def apples(a):
+  if a == 0:
+    return('I have not apples')
+  elif a == 1:
+    return('I have apple')
+  elif a < 0:
+    return('...')
+  else:
+    return('I have ', a, ' apples')
 
 
-                                     #функция getPower
-a = int(input())
-print(a*a)
+def getPower(a):
+  return(a*a)
 
-
-                                #функция sorting
-a = [1,5, 2]
-usl = int(input())
-if usl == 1:
+#                                                                   #RELEASE 2
+def sorting(usl):
+  a=[]
+  if usl == 1:
     a.sort()
-    print(a)
-elif usl == -1:
+    return(a)
+  elif usl == -1:
     a2 = sorted(a, reverse=True)
-    print (a2)
+    return(a2)
 
 
-
-                                    #функция deepSorting
+#???
 class Employee:
-  def __init__(self, age, height):
-      self.age = age
-      self.height = height
-Alex = Employee('15', 140)
-Amanda = Employee('14', 150)
-L = [Alex, Amanda]
-L.sort(key=lambda x: x.height)
-print([item.age for item in L])
+def deepSorting(age, height):
+  Alex = Employee('15', 140)
+  Amanda = Employee('14', 150)
+  L = [Alex, Amanda]
+  L.sort(key=lambda x: x.height)
+  return([item.age for item in L])
 
 
 
 
-                                    #функция getNumbers
-a = ['d', 1, 3, 'null']
-b = []
-for i in range(len(a)):
+def getNumbers(a):
+  for i in range(len(a)):
     if type (a[i]) is int:
-        b.append(a[i])
-        print(b)
+      b=[]
+      b.append(a[i])
+      return(b)
 
 
-                                        #функция min
-a = [1, 5, 34, -100]
-print(min(a))
+def min(a):
+  return(min(a))
 
 
-                                       #функция getSet
-a = [1, 1, 1, 3, 4, 2, 2]
-unique_numbers = list(set(a))
-print(unique_numbers)
+def getSet(a):
+  unique_numbers = list(set(a))
+  return(unique_numbers)
 
 
-                                       #функция findTheMostReapetedEls
-a = [1, 1, 1, 3, 4, 2, 2, 2]
-most = None
-q_most = 0
-for qount in a:
-    q = a.count(qount)
-    if q > q_most:
-        q_most = q
-        most = qount
-print(most)
-
-
-                                         #функция stack
-def check(string):
-    brackets_open = ('(', '[', '{', '<')
-    brackets_closed = (')', ']', '}', '>')
-    stack = []
-    for i in string:
-        if i in brackets_open:
-            stack.append(i)
-        if i in brackets_closed:    
-            if len(stack) == 0:
-                return False
-            index = brackets_closed.index(i)
-            open_bracket = brackets_open[index]
-            if stack[-1] == open_bracket:
-                stack = stack[:-1]  
-            else: return False  
-    return (not stack)
-
-
-                                          #функция checkForBadWord
-a = str(input())
-word = input()
-a.find(word)
-if word in a:
-    print('True')
-else:
-    print('False')
-    
-    
-                                         #функция fullName
-dict = {
-    'name': 'Lim', 
-    'surname': 'Bok', 
-    'age': 12
-}
-print(dict['name'], dict['surname'])
-
-                                        #функция checkForPropertyAndValue
+def findTheMostReapetedEls(a):
+    most = None
+    q_most = 0
+    for qount in a:
+        q = a.count(qount)
+        if q > q_most:
+            q_most = q
+            most = qount
+    return(most)
 
 
 
-                                             #функция parser
+def stack(string):
+     brackets_open = ('(', '[', '{', '<')
+     brackets_closed = (')', ']', '}', '>')
+     stack = []
+     for i in string:
+         if i in brackets_open:
+             stack.append(i)
+         if i in brackets_closed:    
+             if len(stack) == 0:
+                 return False
+             index = brackets_closed.index(i)
+             open_bracket = brackets_open[index]
+             if stack[-1] == open_bracket:
+                 stack = stack[:-1]  
+             else: return False  
+     return (not stack)
+
+
+def checkForBadWord(word):
+    a=[]
+    a.find(word)
+    if word in a:
+        return('True')
+    else:
+        return('False')
+
+
+#                                                                             #RELEASE 3
+def fullName(name, surname):
+    dict = {
+        'name': 'Lim', 
+        'surname': 'Bok', 
+        'age': 12
+    }
+    return(dict['name'], dict['surname'])
+
+# def checkForPropertyAndValue:
+
+
+
+# def parser:
                                              
                                              
                                              
-                                             #функция createObjFromStr
+# def createObjFromStr:
