@@ -11,6 +11,8 @@ sorting(a1,-1)'''
 
 #TASK2?????
 # def deepSorting(a):
+# 123
+
     
 #TASK3
 '''def getNumbers(a):
