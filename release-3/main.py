@@ -1,3 +1,5 @@
+import json
+
 def fullName(obj):
     return obj['surname']+' '+obj['name']
 
@@ -18,7 +20,7 @@ def parser(arr):
             del i['type']
     return own
 
-def createObjFromStr(stroka): #Допустимо ли использовать Eval и Exec
+def createObjFromStr(stroka):
     try:
         return eval(stroka)
     except:
@@ -29,12 +31,17 @@ def createObjFromStr(stroka): #Допустимо ли использовать 
 
 # print(fullName({'name': 'Lim', 'surname': 'Bok', 'age': 12}))
 # print(checkForPropertyAndValue({'key': 1}, 'key2'))
-print(parser([
+object=(parser([
     {
         'type': 'computer',
         'name': 'someComputer',
         'oc': 'Mac',
         'owner': 'Vova'
+    },
+    {
+        'type': 'owner',
+        'name': 'Vova',
+        'age': 12
     },
     {
         'type': 'computer',
@@ -47,11 +54,7 @@ print(parser([
         'name': 'somePhone',
         'oc': 'ios',
         'owner': 'Vova'
-    },
-    {
-        'type': 'owner',
-        'name': 'Vova',
-        'age': 12
     }
 ]))
+print(json.dumps(object, sort_keys=True, indent=4))
 # print(createObjFromStr('''{'name': 'Vova', 'age': 12, 'type': 'owner'}'''))
