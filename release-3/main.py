@@ -1,2 +1,3 @@
 def fullName(obj):
-    return 
+    return obj['surname'] + '' + obj['name']
+print (fullName("{name: 'Lim', surname: 'Bok', age: 12} "))
