@@ -5,10 +5,7 @@ def sum(a,b):
     return a+b
 
 def isEven(number):
-    if number % 2==0:
-        return('true')
-    else:
-        return('false')
+    return number % 2==0
 
 def apples(apple):
     return('i have '+str(apple)+' apples')
