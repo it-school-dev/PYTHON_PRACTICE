@@ -77,6 +77,26 @@ def stack(arr):
         return True
     else:
         return False
-print (stack(['[','[', ']', ']' ]))
-print (stack([']', '[', ']']))
+# print (stack(['[','[', ']', ']' ]))
+# print (stack([']', '[', ']']))
+
+
+
+
+
+def fullName(obj):
+    return obj['surname'] + ' ' + obj['name']
+#print (fullName({"name": 'White', "surname": 'Joe', "age": 35}))
+
+
+
+
+def checkForPropertyAndValue (object,key):
+        if key in object and int(object[key])>0:
+            return True
+        else:
+            return False
+# print (checkForPropertyAndValue ({'key': 5}, 'key2'))
+# print (checkForPropertyAndValue ({'key': 5}, 'key'))
+# print (checkForPropertyAndValue ({'key': -3}, 'key'))
 
