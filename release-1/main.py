@@ -1,30 +1,30 @@
 #TASK1
 def hiFunction(name):
-    print('Hi, ', name)
-hiFunction('Nikita')
+    return 'Hi, ' + name
+print(hiFunction('Nikita'))
 
 #TASK2
 def sum(a,b):
-    print(a+b)
-sum(5,6)
+    return a+b
+print(sum(5,6))
 
 
 #TASK3
 def isEven(k):
     if k%2==0:
-        print('true')
+        return 'true'
     else:
-        print('false')
-isEven(5)
-isEven(0)
-isEven(4)
+        return 'false'
+print(isEven(5))
+print(isEven(0))
+print(isEven(4))
 
 #TASK4
 def apples(a):
-    print('i have', a, 'apples')
-apples(2)
+    return f'i have {a} apples'
+print(apples(2))
 
 #TASK5
 def getPower(a):
-    print(a*a)
-getPower(4)
+    return a**2
+print(getPower(4))

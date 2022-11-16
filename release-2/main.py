@@ -4,17 +4,19 @@
 #         a.sort()
 #     else:
 #         a.sort(reverse=True)
-#     print(a)
+#     return a
 # a1=[1,5,2]
-# sorting(a1,-1)
+# print(sorting(a1,1))
     
 
 #TASK2
 # import operator
 # def deepSorting(a, x):
 #     a.sort(key=operator.itemgetter(x))                    #эта штука достает конкретный х из списка
-#     print(a)
-# deepSorting([{'age': 15, 'height': 140}, {'age': 14, 'height': 150}], 'age') 
+#     return a
+# a1 = [{'age': 15, 'height': 140}, {'age': 14, 'height': 150}]
+# x1 = 'age'
+# print(deepSorting(a1, x1)) 
 
 
     
@@ -24,9 +26,9 @@
 #     for i in range(len(a)):
 #         if type(a[i])==int:
 #             b.append(a[i])
-#     print(b)
+#     return b
 # a1=['d',1,3,'null',8]
-# getNumbers(a1)
+# print(getNumbers(a1))
 
 #TASK4
 # def min(a):
@@ -36,21 +38,21 @@
 #             mn=a[i]
 #         else:
 #             mn=a[i+1]
-#     print(mn)
+#     return mn
 # a1=[1,5,34,-100]
-# min(a1)
+# print(min(a1))
 
-# #TASK5
+#TASK5
 # def getSet(a):
 #     b=[]
 #     for i in range(len(a)-1):
 #         if a[i]!=a[i-1]:
 #             b.append(a[i])
-#     print(b)
+#     return b
 # a1=[1,1,1,3,4,2,2]
-# getSet(a1)
+# print(getSet(a1))
 
-# #TASK6
+#TASK6
 # def findTheMostReapetedEls(a):
 #     b=[]
 #     for i in range(len(a)-1):
@@ -61,28 +63,28 @@
 #         k=a.count(b[i])
 #         if k>=3:
 #             c.append(b[i])
-#     print(c)
+#     return c
 # a1=[1,1,1,3,4,2,2,2]
-# findTheMostReapetedEls(a1)
+# print(findTheMostReapetedEls(a1))
 
 # #TASK7
 # def stack(a):
 #     open=a.count('[')
 #     close=a.count(']')
 #     if open==close:
-#         print('true')
+#         return 'true'
 #     else:
-#         print('false')
+#         return 'false'
 # a1=['[','[',']',']']
 # a2=['[','[',']']
-# stack(a1)
-# stack(a2)
+# print(stack(a1))
+# print(stack(a2))
 
 # #TASK8
 # def checkForBadWord(list):
 #     if 'Hi' in list:
-#         print('true')
+#         return 'true'
 #     else:
-#         print('false')
+#         return 'false'
 # str='Hi, Nikita'
-# checkForBadWord(str)
+# print(checkForBadWord(str))
